@@ -1,10 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global style */
 
 body {
   margin: 0;
   position: relative;
   min-height: 100vh;
   font-family: monospace;
+  text-align: center;
 }
 
 button {
@@ -14,23 +15,29 @@ button {
 }
 
 .header {
+  position: fixed;
   width: 100%;
   background-color: black;
   padding: 10px;
 }
 
+.header img {
+  float: left;
+}
+
 .productGrid {
+  margin: auto;
+  max-width: 880px;
   display: grid;
   padding: 20px;
   grid-gap: 20px;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding-top: 70px;
   padding-bottom: 70px;
 }
 
 .productItem {
   display: inline-block;
-  overflow: hidden;
   width: 200px;
   height: 385px;
   text-align: center;
