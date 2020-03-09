@@ -1,0 +1,17 @@
+<!--Modal Form-->
+<div [@dialog] *ngIf="visible" id="myForm" class="modalForm">
+  <form class="modalContainer">
+      <p>Do you wanna buy it?</p>
+      <div class="textField">
+          <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="textField">
+          <input type="password" id="psw" placeholder="Password" required>
+      </div>
+      <footer>
+        <!--No he conseguido encontrar como hacer que los botones se vean como me pedis...-->
+          <button class="cancelButton" type="button" (click)="close()">CANCEL</button>
+          <button class="confirmButton" type="submit" (click)="buy()">CONFIRM</button>
+      </footer>
+  </form>
+</div>

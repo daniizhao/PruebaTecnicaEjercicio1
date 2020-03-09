@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  font-family: monospace;
+}
+
+button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+}
+
+.productGrid {
+  display: grid;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.productItem {
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  height: 385px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.productPhoto {
+  width: 200px;
+}
+
+.productName {
+  margin-top: -25px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: 70px;
+  padding: 10px 40px;
+  position: absolute;
+}
+
+.productPrice {
+  font-weight: bold;
+  padding: 30px;
+}
+
+.buyButton {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  width: 200px;
+  height: 40px;
+}
+
+.footer {
+  color: white;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  font-size: 12px;
+  font-family: serif;
+  text-align: center;
+  padding: 20px;
+}

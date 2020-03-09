@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 Slashmobility</title>
+</head>
+<body>
+  <div class="header">
+      <img src="assets/img/slash_logo.png" alt="Slashmobility Logo">
+  </div>
+  <div class="productGrid">
+      <div class="productItem" *ngFor="let product of products">
+          <img class="productPhoto" src="assets/img/nutella.jpg" alt="Product Image">
+          <div class="productName"> {{ product.name }}</div>
+          <div class="productPrice">{{ product.price }}€</div>
+          <button class="buyButton" (click) = toggleDisplay()>BUY</button>
+      </div>
+  </div>
+  <app-modal [(visible)]="showModal"></app-modal>
+  <footer class="footer"> © Slashmobility 2018</footer>
+</body>
+</html>
